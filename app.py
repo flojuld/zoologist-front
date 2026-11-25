@@ -30,7 +30,7 @@ sex = st.selectbox('Sex', ['Male', 'Female'])
 
 if st.button('Click to predict'):
 
-    url_penguin = f'http://localhost:8080/predict'
+    url_penguin = f'{st.secrets["API_URL"]}/predict'
 
     api_pm = {
         'island' : island,
